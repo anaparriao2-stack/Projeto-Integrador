@@ -1,0 +1,47 @@
+/* Variaveis de css */
+/* Aqui a gente guarda as cores do site em um so lugar.
+Vantagem: se quiser trocar uma cor. muda so aqui e ela
+e atualizada em todos os lugares que a usam*/
+
+:root{
+    
+    --azul-escuro: #1D4ED8;
+    --azul: #2563EB;
+    --verde: #16A34A;
+    --verde-escuro:#15803D;
+    --texto-principal:#3968d3;
+    --texto-secundario: #475569;
+    --cor-borda:#E5E7EB;
+    --cor-fundo:#FFFFFF;
+
+}
+/* o "*" serve para selecionar todos os elementos da pagina */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ body {
+    font-family: 'Inter', sans-serif;
+
+    color: var(--texto-principal);
+ }
+
+ .header {
+    position: sticky;/* Faz o cabecalho "grudar no topo da tela" */
+    top: 0;/* coladinha no topo */
+    z-index: 100;/* ordem de empilhamento (camadas) */
+    background-color: var(--cor-fundo);
+    border-bottom: 1px solid var(--cor-borda);
+ }
+
+ .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+ }
